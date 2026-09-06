@@ -1,97 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Surajit Sarkar | Freelance Web Developer</title>
-<meta name="description" content="Freelance Web Developer specializing in Frontend, Backend and UI/UX Design.">
-<style>
-:root{--bg:#08111f;--card:#101d31;--text:#eef5ff;--muted:#aab8cc;--accent:#37d5ff;--accent2:#7c5cff;--border:rgba(255,255,255,.1)}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#07101c,#0c1930);color:var(--text);line-height:1.6}
-a{text-decoration:none;color:inherit}
-nav{position:sticky;top:0;z-index:10;background:rgba(7,16,28,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.nav{max-width:1100px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-size:22px;font-weight:800}.logo span{color:var(--accent)}
-.navlinks{display:flex;gap:22px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--accent)}
-.hero{max-width:1100px;margin:auto;padding:80px 22px 70px;display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:center}
-.badge{display:inline-block;padding:8px 14px;border:1px solid var(--border);border-radius:30px;color:var(--accent);background:rgba(55,213,255,.07);font-size:13px;margin-bottom:18px}
-h1{font-size:clamp(42px,6vw,72px);line-height:1.05;margin-bottom:20px}
-h1 span{background:linear-gradient(90deg,var(--accent),#9d8cff);-webkit-background-clip:text;color:transparent}
-.hero p{color:var(--muted);max-width:650px;font-size:18px;margin-bottom:28px}
-.btns{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:13px 20px;border-radius:10px;font-weight:700;border:1px solid var(--border);display:inline-block}.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#06101b;border:0}.secondary{background:#111f34}
-.photo-wrap{display:flex;justify-content:center}.photo{width:280px;height:280px;object-fit:cover;border-radius:50%;border:7px solid rgba(55,213,255,.25);box-shadow:0 0 55px rgba(55,213,255,.18)}
-section{max-width:1100px;margin:auto;padding:75px 22px}.section-title{font-size:36px;margin-bottom:10px}.section-sub{color:var(--muted);margin-bottom:35px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:rgba(16,29,49,.8);border:1px solid var(--border);border-radius:16px;padding:25px}.card h3{margin:10px 0;color:#fff}.card p{color:var(--muted);font-size:14px}
-.icon{font-size:28px}
-.skills{display:flex;gap:10px;flex-wrap:wrap}.skill{padding:10px 15px;border-radius:25px;background:#10243d;border:1px solid var(--border);color:#dce8f7}
-.projects .card{min-height:190px}.tag{display:inline-block;font-size:12px;color:var(--accent);margin-bottom:8px}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-box{background:rgba(16,29,49,.8);padding:28px;border:1px solid var(--border);border-radius:16px}.contact-box p{color:var(--muted);margin:8px 0}
-footer{text-align:center;padding:30px 20px;color:var(--muted);border-top:1px solid var(--border);font-size:13px}
-@media(max-width:800px){.hero{grid-template-columns:1fr;text-align:center;padding-top:55px}.hero p{margin-left:auto;margin-right:auto}.btns{justify-content:center}.grid{grid-template-columns:1fr}.contact{grid-template-columns:1fr}.navlinks{display:none}.photo{width:220px;height:220px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Surajit Sarkar — Freelance Graphic Designer and Web Developer. Professional logos, social media designs, thumbnails and responsive websites.">
+  <meta name="theme-color" content="#08111f">
+  <title>Surajit Sarkar | Graphic Designer & Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#06101d; --bg2:#0a1728; --card:#0d1d31; --text:#f5f8ff; --muted:#aab8cb;
+      --line:rgba(255,255,255,.1); --gold:#ffc400; --blue:#16a8ff; --green:#20d77a;
+      --shadow:0 20px 60px rgba(0,0,0,.28); --radius:22px; --max:1180px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .container{width:min(var(--max),92%);margin:auto}
+    .section{padding:90px 0}
+    .eyebrow{color:var(--gold);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem}
+    .section-title{font-size:clamp(2rem,5vw,3.1rem);line-height:1.1;margin:10px 0 14px}
+    .section-subtitle{color:var(--muted);max-width:680px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:999px;font-weight:800;border:1px solid var(--line);transition:.25s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--gold);color:#08111f;border-color:var(--gold)}
+    .btn-dark{background:#0b1a2d}
+    .tag{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:#c7d4e5;font-size:.78rem}
+    header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(6,16,29,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:900}
+    .brand-mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--gold),#ff8b00);display:grid;place-items:center;color:#07101c;font-size:1.25rem}
+    .brand small{display:block;color:var(--muted);font-size:.68rem;font-weight:600}
+    .navlinks{display:flex;gap:24px;align-items:center;color:#c9d5e5;font-size:.9rem}
+    .navlinks a:hover{color:var(--gold)}
+    .menu{display:none;background:none;border:0;color:white;font-size:1.6rem}
+    .hero{min-height:100vh;padding-top:120px;display:grid;align-items:center;position:relative;overflow:hidden}
+    .hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(10px);opacity:.22;pointer-events:none}
+    .hero:before{width:420px;height:420px;background:var(--blue);top:10%;left:-180px}
+    .hero:after{width:380px;height:380px;background:var(--gold);right:-180px;bottom:0}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;position:relative;z-index:1}
+    .hero h1{font-size:clamp(3rem,7vw,6.4rem);line-height:.94;letter-spacing:-.05em;margin:15px 0 24px}
+    .hero h1 span{color:var(--gold)}
+    .hero p{font-size:1.1rem;color:var(--muted);max-width:620px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .quick{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+    .hero-card{position:relative;border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.02));padding:14px;border-radius:32px;box-shadow:var(--shadow)}
+    .hero-card img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:24px}
+    .floating{position:absolute;background:#0b1a2d;border:1px solid var(--line);border-radius:18px;padding:13px 15px;box-shadow:var(--shadow);font-weight:800}
+    .float-one{left:-30px;bottom:70px}.float-two{right:-25px;top:55px}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}
+    .portrait{border-radius:28px;overflow:hidden;border:1px solid var(--line);background:#0d1d31}
+    .portrait img{aspect-ratio:4/5;object-fit:cover}
+    .facts{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:26px}
+    .fact{padding:18px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025)}
+    .fact strong{display:block;color:var(--gold);font-size:1.4rem}
+    .services{background:var(--bg2)}
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}
+    .service{padding:26px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(255,255,255,.025);transition:.25s}
+    .service:hover{transform:translateY(-5px);border-color:rgba(255,196,0,.45)}
+    .icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:rgba(255,196,0,.12);color:var(--gold);font-size:1.35rem;margin-bottom:18px}
+    .service h3{margin-bottom:7px}.service p{color:var(--muted);font-size:.92rem}
+    .portfolio-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:38px}
+    .project{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#0b1829;cursor:pointer}
+    .project img{width:100%;aspect-ratio:16/10;object-fit:cover;transition:.35s}
+    .project:hover img{transform:scale(1.025)}
+    .project-info{padding:16px 18px;display:flex;justify-content:space-between;gap:12px;align-items:center}
+    .project-info span{color:var(--muted);font-size:.82rem}
+    .skills{background:var(--bg2)}
+    .skill-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:38px}
+    .skill-box{padding:26px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(255,255,255,.025)}
+    .skill{margin-top:20px}.skill-top{display:flex;justify-content:space-between;font-weight:700;font-size:.9rem}
+    .bar{height:8px;background:#17263a;border-radius:99px;overflow:hidden;margin-top:8px}
+    .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--gold));border-radius:99px}
+    .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}
+    .price{padding:28px;border:1px solid var(--line);border-radius:24px;background:#0b192b}
+    .price.featured{border-color:var(--gold);transform:translateY(-8px)}
+    .price h3{font-size:1.2rem}.price .amount{font-size:2.5rem;font-weight:900;margin:10px 0}
+    .price ul{list-style:none;color:var(--muted);margin:18px 0 25px}
+    .price li{margin:9px 0}.price li:before{content:"✓";color:var(--green);font-weight:900;margin-right:9px}
+    .cta{padding:70px 0}.cta-card{padding:48px;border-radius:30px;background:linear-gradient(135deg,#0f2c47,#122039);border:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:30px}
+    footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted)}
+    .footer-grid{display:flex;justify-content:space-between;gap:20px;align-items:center}
+    .social{display:flex;gap:10px}.social a{width:38px;height:38px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center}
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;place-items:center;z-index:100;padding:20px}
+    .modal.open{display:grid}.modal-inner{max-width:1000px;width:100%;position:relative}.modal img{width:100%;max-height:85vh;object-fit:contain;border-radius:15px}
+    .close{position:absolute;right:0;top:-45px;background:none;color:white;border:0;font-size:2rem;cursor:pointer}
+    @media(max-width:900px){
+      .navlinks{display:none}.menu{display:block}
+      .navlinks.open{display:flex;position:absolute;left:0;right:0;top:72px;background:#071321;padding:20px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}
+      .hero-grid,.about-grid{grid-template-columns:1fr}
+      .hero{padding-top:105px}.hero-card{max-width:620px;margin:auto}
+      .service-grid,.pricing-grid{grid-template-columns:1fr 1fr}
+      .cta-card{flex-direction:column;align-items:flex-start}
+    }
+    @media(max-width:600px){
+      .section{padding:70px 0}.hero h1{font-size:3.2rem}
+      .service-grid,.portfolio-grid,.skill-grid,.pricing-grid{grid-template-columns:1fr}
+      .price.featured{transform:none}.float-one{left:8px}.float-two{right:8px}
+      .facts{grid-template-columns:1fr}.footer-grid{flex-direction:column;align-items:flex-start}
+    }
+  </style>
 </head>
 <body>
-<nav><div class="nav">
-  <a class="logo" href="#">YOUR<span>DEV</span></a>
-  <div class="navlinks"><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Portfolio</a><a href="#contact">Contact</a></div>
-</div></nav>
-
-<header class="hero">
-  <div>
-    <div class="badge">AVAILABLE FOR FREELANCE PROJECTS</div>
-    <h1>Hi, I'm <span>Surajit Sarkar</span><br>Web Developer.</h1>
-    <p>I build modern, responsive and user-friendly websites with a strong focus on Frontend, Backend and UI/UX Design.</p>
-    <div class="btns"><a class="btn primary" href="#contact">Hire Me</a><a class="btn secondary" href="#projects">View Portfolio</a></div>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#home">
+        <span class="brand-mark">S</span>
+        <span>Surajit Sarkar<small>Graphic Designer • Web Developer</small></span>
+      </a>
+      <button class="menu" aria-label="Open menu">☰</button>
+      <div class="navlinks">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
+        <a class="btn btn-primary" href="https://wa.me/919547722955" target="_blank">Hire Me ↗</a>
+      </div>
+    </nav>
   </div>
-  <div class="photo-wrap"><img class="photo" src="profile.jpg" alt="Profile photo"></div>
 </header>
 
-<section id="about">
-  <h2 class="section-title">About Me</h2>
-  <p class="section-sub">A freelance developer focused on practical, professional digital solutions.</p>
-  <div class="card"><p>I help businesses, creators and individuals turn ideas into clean, fast and mobile-friendly websites. My core areas are frontend development, backend development and UI/UX design.</p></div>
-</section>
-
-<section id="services">
-  <h2 class="section-title">My Services</h2>
-  <p class="section-sub">What I can build for your business or personal brand.</p>
-  <div class="grid">
-    <div class="card"><div class="icon">💻</div><h3>Frontend Development</h3><p>Responsive and modern interfaces using HTML, CSS, JavaScript and modern frameworks.</p></div>
-    <div class="card"><div class="icon">⚙️</div><h3>Backend Development</h3><p>APIs, databases, authentication and reliable server-side functionality.</p></div>
-    <div class="card"><div class="icon">🎨</div><h3>UI/UX Design</h3><p>Clean, user-friendly layouts and experiences designed for real users.</p></div>
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Freelance • India</div>
+      <h1>Hello, I'm <span>Surajit Sarkar</span></h1>
+      <p>I create professional graphic designs and modern, responsive websites that help businesses look better, communicate clearly and grow online.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://wa.me/919547722955?text=Hello%20Surajit%2C%20I%20want%20to%20discuss%20a%20project." target="_blank">💬 WhatsApp Me</a>
+        <a class="btn btn-dark" href="mailto:surajitsarkar9ts@gmail.com">✉ Get in Touch</a>
+      </div>
+      <div class="quick">
+        <span class="tag">Creative Design</span><span class="tag">Modern Websites</span><span class="tag">On-Time Delivery</span><span class="tag">Friendly Support</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img src="assets/portfolio-2.png" alt="Surajit Sarkar portfolio presentation">
+      <div class="floating float-one">🎨 Creative Mind</div>
+      <div class="floating float-two">⚡ Fast Delivery</div>
+    </div>
   </div>
 </section>
 
-<section id="projects" class="projects">
-  <h2 class="section-title">Portfolio</h2>
-  <p class="section-sub">Replace these sample projects with your real client or demo work.</p>
-  <div class="grid">
-    <div class="card"><span class="tag">WEB DEVELOPMENT</span><h3>Web Development</h3><p>Modern, responsive and user-friendly websites for businesses, creators and personal brands.</p></div>
-    <div class="card"><span class="tag">GRAPHIC DESIGN</span><h3>Graphic Design</h3><p>Professional social media creatives, promotional graphics, posters and business advertisements.</p></div>
-    <div class="card"><span class="tag">THUMBNAIL DESIGN</span><h3>YouTube &amp; Facebook Thumbnail</h3><p>Eye-catching thumbnails designed to make video and social media content stand out.</p></div>
-    <div class="card"><span class="tag">BRANDING</span><h3>Logo Design</h3><p>Clean and memorable logo concepts for businesses, creators and personal brands.</p></div>
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="portrait"><img src="assets/portfolio-2.png" alt="Surajit Sarkar"></div>
+    <div>
+      <div class="eyebrow">About Me</div>
+      <h2 class="section-title">Designing ideas into <span style="color:var(--gold)">real results.</span></h2>
+      <p class="section-subtitle">I'm Surajit Sarkar, a creative Graphic Designer and Web Developer. I focus on clean visuals, strong branding, user-friendly interfaces and responsive websites for businesses, creators and personal brands.</p>
+      <div class="facts">
+        <div class="fact"><strong>4+</strong>Core service areas</div>
+        <div class="fact"><strong>100%</strong>Client-focused work</div>
+        <div class="fact"><strong>24/7</strong>Project communication</div>
+        <div class="fact"><strong>Remote</strong>Freelance availability</div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section>
-  <h2 class="section-title">Skills</h2>
-  <p class="section-sub">Core skills for my freelance work.</p>
-  <div class="skills">
-    <span class="skill">HTML5</span><span class="skill">CSS3</span><span class="skill">JavaScript</span><span class="skill">React</span><span class="skill">Node.js</span><span class="skill">Express</span><span class="skill">PHP</span><span class="skill">MySQL</span><span class="skill">MongoDB</span><span class="skill">UI/UX</span><span class="skill">Responsive Design</span>
+<section class="section services" id="services">
+  <div class="container">
+    <div class="eyebrow">What I Do</div>
+    <h2 class="section-title">My Services</h2>
+    <p class="section-subtitle">Creative design and modern web solutions tailored to your brand.</p>
+    <div class="service-grid">
+      <article class="service"><div class="icon">✦</div><h3>Logo Design</h3><p>Unique, memorable logos and brand marks designed for a professional identity.</p></article>
+      <article class="service"><div class="icon">◈</div><h3>Social Media Design</h3><p>Eye-catching Facebook and Instagram posts, covers, banners and promotional creatives.</p></article>
+      <article class="service"><div class="icon">▶</div><h3>YouTube Thumbnail</h3><p>High-impact thumbnails built to improve attention and clicks.</p></article>
+      <article class="service"><div class="icon">▣</div><h3>Poster & Banner</h3><p>Promotional posters, flyers, advertisements and event creatives.</p></article>
+      <article class="service"><div class="icon">&lt;/&gt;</div><h3>Web Development</h3><p>Responsive, modern websites with clean frontend experiences.</p></article>
+      <article class="service"><div class="icon">▤</div><h3>Business Card</h3><p>Professional business cards and branded stationery for your business.</p></article>
+    </div>
   </div>
 </section>
 
-<section id="contact">
-  <h2 class="section-title">Let's Work Together</h2>
-  <p class="section-sub">Ready to discuss your next project?</p>
-  <div class="contact">
-    <div class="contact-box"><h3>Contact</h3><p>📧 Email: surajitsarkar9ts@gmail.com</p><p>📱 Phone/WhatsApp: +91 9547722955</p><p>📍 India</p></div>
-    <div class="contact-box"><h3>Freelance Services</h3><p>Website Development • UI/UX Design • Business Websites • E-commerce • Portfolio Websites</p><div class="btns" style="margin-top:15px"><a class="btn primary" href="mailto:surajitsarkar9ts@gmail.com">Email Me</a><a class="btn secondary" href="https://wa.me/919547722955" target="_blank" rel="noopener">WhatsApp Me</a></div></div>
+<section class="section" id="portfolio">
+  <div class="container">
+    <div class="eyebrow">Selected Work</div>
+    <h2 class="section-title">My Portfolio</h2>
+    <p class="section-subtitle">A selection of graphic design, branding, social media and web-development related work.</p>
+    <div class="portfolio-grid">
+      <article class="project" data-img="assets/portfolio-4.png"><img src="assets/portfolio-4.png" alt="Logo and thumbnail portfolio"><div class="project-info"><b>Branding & Logo</b><span>View ↗</span></div></article>
+      <article class="project" data-img="assets/portfolio-1.png"><img src="assets/portfolio-1.png" alt="Graphic design services portfolio"><div class="project-info"><b>Graphic Design</b><span>View ↗</span></div></article>
+      <article class="project" data-img="assets/portfolio-3.png"><img src="assets/portfolio-3.png" alt="Graphic designer portfolio showcase"><div class="project-info"><b>Creative Showcase</b><span>View ↗</span></div></article>
+      <article class="project" data-img="assets/portfolio-2.png"><img src="assets/portfolio-2.png" alt="Web developer and graphic designer profile"><div class="project-info"><b>Web & Design Profile</b><span>View ↗</span></div></article>
+    </div>
   </div>
 </section>
 
-<footer>© 2026 Your Name — Freelance Web Developer. All rights reserved.</footer>
+<section class="section skills">
+  <div class="container">
+    <div class="eyebrow">My Expertise</div>
+    <h2 class="section-title">Skills</h2>
+    <div class="skill-grid">
+      <div class="skill-box">
+        <h3>Graphic Design</h3>
+        <div class="skill"><div class="skill-top"><span>Logo & Brand Identity</span><span>92%</span></div><div class="bar"><i style="width:92%"></i></div></div>
+        <div class="skill"><div class="skill-top"><span>Social Media Design</span><span>95%</span></div><div class="bar"><i style="width:95%"></i></div></div>
+        <div class="skill"><div class="skill-top"><span>Thumbnail & Poster</span><span>94%</span></div><div class="bar"><i style="width:94%"></i></div></div>
+      </div>
+      <div class="skill-box">
+        <h3>Web Development</h3>
+        <div class="skill"><div class="skill-top"><span>HTML / CSS</span><span>90%</span></div><div class="bar"><i style="width:90%"></i></div></div>
+        <div class="skill"><div class="skill-top"><span>JavaScript</span><span>85%</span></div><div class="bar"><i style="width:85%"></i></div></div>
+        <div class="skill"><div class="skill-top"><span>Responsive UI</span><span>92%</span></div><div class="bar"><i style="width:92%"></i></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="container">
+    <div class="eyebrow">Simple Packages</div>
+    <h2 class="section-title">Pricing</h2>
+    <p class="section-subtitle">Starting packages — final pricing can be adjusted according to your project requirements.</p>
+    <div class="pricing-grid">
+      <div class="price"><h3>Basic</h3><div class="amount">$20</div><p class="section-subtitle">For a simple design need.</p><ul><li>Logo / single creative</li><li>2 concepts</li><li>3 revisions</li></ul><a class="btn btn-dark" href="https://wa.me/919547722955?text=Hello%2C%20I%27m%20interested%20in%20the%20Basic%20package." target="_blank">Order Now</a></div>
+      <div class="price featured"><h3>Standard</h3><div class="amount">$50</div><p class="section-subtitle">For growing brands.</p><ul><li>Social media pack</li><li>10 posts + 2 banners</li><li>5 revisions</li></ul><a class="btn btn-primary" href="https://wa.me/919547722955?text=Hello%2C%20I%27m%20interested%20in%20the%20Standard%20package." target="_blank">Order Now</a></div>
+      <div class="price"><h3>Premium</h3><div class="amount">$150</div><p class="section-subtitle">For a complete brand/web presence.</p><ul><li>Branding + website</li><li>Logo + social media</li><li>Unlimited revisions</li></ul><a class="btn btn-dark" href="https://wa.me/919547722955?text=Hello%2C%20I%27m%20interested%20in%20the%20Premium%20package." target="_blank">Order Now</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="container">
+    <div class="cta-card">
+      <div><div class="eyebrow">Ready to Start?</div><h2 class="section-title">Let's build something amazing.</h2><p class="section-subtitle">Tell me about your project and I'll get back to you.</p></div>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://wa.me/919547722955?text=Hello%20Surajit%2C%20I%20have%20a%20project%20for%20you." target="_blank">💬 Chat on WhatsApp</a>
+        <a class="btn btn-dark" href="mailto:surajitsarkar9ts@gmail.com">✉ Send Email</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><b style="color:white">Surajit Sarkar</b><br><small>Graphic Designer • Web Developer</small></div>
+    <div class="social"><a href="mailto:surajitsarkar9ts@gmail.com" aria-label="Email">✉</a><a href="https://wa.me/919547722955" target="_blank" aria-label="WhatsApp">☏</a></div>
+    <small>© 2026 Surajit Sarkar. All rights reserved.</small>
+  </div>
+</footer>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-inner"><button class="close" aria-label="Close">×</button><img id="modalImg" src="" alt="Portfolio preview"></div>
+</div>
+
+<script>
+  const menu=document.querySelector('.menu'), nav=document.querySelector('.navlinks');
+  menu.addEventListener('click',()=>nav.classList.toggle('open'));
+  document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+  const modal=document.getElementById('modal'), modalImg=document.getElementById('modalImg');
+  document.querySelectorAll('.project').forEach(p=>p.addEventListener('click',()=>{
+    modalImg.src=p.dataset.img; modal.classList.add('open'); modal.setAttribute('aria-hidden','false');
+  }));
+  document.querySelector('.close').addEventListener('click',()=>{modal.classList.remove('open');modal.setAttribute('aria-hidden','true')});
+  modal.addEventListener('click',e=>{if(e.target===modal){modal.classList.remove('open');modal.setAttribute('aria-hidden','true')}});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')modal.classList.remove('open')});
+</script>
 </body>
 </html>
